@@ -1,0 +1,460 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling utama untuk body */
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Font utama untuk body */
+    background-color: rgba(240, 248, 255, 0.9); /* Warna latar belakang yang lebih cerah */
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    background-image: url('ASDP_Logo_2023.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Overlay tambahan pada body */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(150deg, #66b2ff, #004080); /* Gradasi biru */
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: 'Roboto Slab', serif; /* Gaya font klasik */
+}
+
+/* Header container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Heading Utama */
+h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif; /* Font bergaya klasik dan elegan */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Efek bayangan teks */
+}
+
+/* NAVIGASI */
+nav {
+    background-color: #8CC63F; /* Hijau segar */
+    padding: 0.7rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif; /* Font modern */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* CONTAINER UTAMA */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    animation: slideInRight 1.5s ease-in-out;
+    font-family: 'Lora', serif; /* Font elegan dan profesional */
+}
+
+.container h2 {
+    color: #004080;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: 'Lora', serif; /* Font klasik untuk heading */
+    letter-spacing: 1px;
+}
+
+/* SECTION */
+.section {
+    margin-bottom: 2.5rem;
+    font-family: 'Roboto', sans-serif; /* Font ringan dan bersih */
+}
+
+.section h2 {
+    color: #004080;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive; /* Font unik untuk heading section */
+}
+
+/* FORMULIR KONTAK */
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Nunito', sans-serif; /* Font ringan dan modern */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Roboto Mono', monospace; /* Font monospace untuk label */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Tombol Form */
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #00B0D9;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    font-family: 'Oswald', sans-serif; /* Font tegas untuk tombol */
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: transparent;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif; /* Font geometris */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SOSIAL MEDIA */
+.social-icons {
+    display: flex;
+    gap: 20px; /* Jarak antar ikon */
+    justify-content: center; /* Pusatkan ikon secara horizontal */
+    padding: 15px;
+    background-color: rgba(244, 244, 244, 0.8); /* Transparansi latar belakang */
+    border-radius: 12px; /* Sudut membulat */
+    backdrop-filter: blur(8px); /* Efek blur pada latar belakang */
+    font-family: 'Raleway', sans-serif; /* Font bersih */
+    animation: fadeIn 1s ease-in-out; /* Animasi muncul */
+}
+
+/* Ikon Sosial */
+.social-icons a {
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: rgba(51, 51, 51, 0.8); /* Warna ikon default */
+    font-size: 26px; /* Ukuran ikon */
+    background-color: rgba(255, 255, 255, 0.3); /* Latar belakang transparan ikon */
+    padding: 12px; /* Ruang di sekitar ikon */
+    border-radius: 50%; /* Bentuk bulat */
+    transition: all 0.4s ease; /* Efek transisi halus */
+    font-family: 'Roboto', sans-serif;
+    display: flex; /* Agar ikon terlihat terpusat */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+}
+
+/* Efek Hover Ikon Sosial */
+.social-icons a:hover {
+    color: #007BFF; /* Warna ikon saat hover */
+    background-color: rgba(0, 123, 255, 0.2); /* Latar belakang biru transparan */
+    transform: scale(1.2) rotate(10deg); /* Perbesar dan sedikit putar ikon */
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4); /* Tambahkan bayangan lebih tegas */
+}
+
+/* Efek Hover Animasi Inner Glow */
+.social-icons a:hover::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border: 2px solid rgba(0, 123, 255, 0.6);
+    border-radius: 50%;
+    animation: glow 1s infinite alternate; /* Efek glow berulang */
+}
+
+/* Efek Glow */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+}
+
+/* Animasi Muncul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Muncul dari bawah */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-family: 'Lora', serif; /* Font klasik untuk footer */
+}
+
+/* Styling untuk Carousel Container */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1300px; /* Maksimal lebar carousel */
+    height: 500px; /* Tinggi default carousel */
+    margin: 2rem auto; /* Pusatkan carousel */
+    overflow: hidden; /* Sembunyikan elemen di luar kontainer */
+    border-radius: 12px; /* Sudut melengkung */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+/* Styling untuk Slide Gambar */
+.carousel-inner {
+    display: flex; /* Membuat gambar dalam barisan */
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out; /* Mempercepat transisi (dari 1.5s ke 1s) */
+}
+
+.carousel-inner img {
+    flex-shrink: 0; /* Hindari elemen menyusut */
+    width: 100%; /* Gambar memenuhi lebar slide */
+    height: 100%; /* Gambar memenuhi tinggi slide */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+}
+
+/* Navigasi (Tombol Sebelumnya dan Berikutnya) */
+.carousel-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none; /* Mencegah pointer pada area navigasi */
+}
+
+.carousel-navigation button {
+    background-color: rgba(0, 0, 0, 0.5); /* Tombol transparan */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    pointer-events: all; /* Aktifkan pointer hanya pada tombol */
+}
+
+.carousel-navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Warna lebih gelap saat hover */
+}
+
+/* Indicator (Bullet Navigation) */
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.carousel-indicators span {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparan default */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators span.active {
+    background-color: #007BFF; /* Warna indikator aktif */
+}
+
+/* RESPONSIF */
+@media (max-width: 768px) {
+    .carousel {
+        height: 300px; /* Tinggi carousel lebih kecil untuk layar kecil */
+    }
+
+    .carousel-navigation button {
+        font-size: 1.2rem;
+        padding: 8px 15px;
+    }
+
+    .carousel-indicators span {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        height: 250px; /* Tinggi lebih kecil untuk layar sangat kecil */
+    }
+
+    .carousel-navigation button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
+    .carousel-indicators span {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+
+/* Hilangkan titik (bullet points) pada daftar layanan */
+ul {
+    list-style-type: none; /* Hapus bullet points */
+    padding-left: 0; /* Hilangkan padding default di sebelah kiri */
+    margin-left: 0; /* Hilangkan margin default di sebelah kiri */
+}
+
+li {
+    margin-bottom: 10px; /* Tambahkan jarak antar item daftar untuk estetika */
+}
+
+
+/* Animasi */
+.animation-container {
+    margin: 1.5rem 0;
+}
+
+.animation-gif {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
